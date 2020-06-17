@@ -5,4 +5,4 @@
 ## 👩‍🚀 Índice de desafios
 
 - Módulo 1 - Introdução a Programação WEB
-    - [Desafio 1-1: Primeiros passos com JS](desafios/01-1-primeiros-passos-com-js.md)
+    - [Desafio 1-1: Primeiros passos com JS](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-1-primeiros-passos-com-js.md)
