@@ -11,6 +11,6 @@
     - [Challenge 1-4](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md)
 
 ## 📝 License
-This project is under the **MIT license**.
+This project is under **MIT license**.
 
 Made with 🖤 by [Mariane Algayer](https://github.com/MarianeAlgayer) 👋
