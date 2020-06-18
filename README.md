@@ -13,4 +13,6 @@
 ## 📝 License
 This project is under **MIT license**.
 
+---
+
 Made with 🖤 by [Mariane Algayer](https://github.com/MarianeAlgayer) 👋
