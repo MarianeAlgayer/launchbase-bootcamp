@@ -25,7 +25,7 @@ let message = ''
     }
 } */
 
-// Resolução 02
+// Solution 02
 
 const womanCanRetire = gender == 'F' && contribution >= 30 && contributionCalculation >= 85
 const manCanRetire = gender == 'M' && contribution >= 35 && contributionCalculation >= 95
