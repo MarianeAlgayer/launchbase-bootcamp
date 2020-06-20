@@ -24,9 +24,9 @@ for (let user of users) {
 // Search for technology
 
 function checkIfUseCSS(user) {
-    for (let technology of user.technologies){
+    for (let technology of user.technologies) {
         if (technology == 'CSS') return true
-        }
+    }
 
     return false
 }
