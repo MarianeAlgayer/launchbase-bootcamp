@@ -29,7 +29,6 @@ function checkIfUseCSS(user) {
         }
 
     return false
-    
 }
 
 for (let pos = 0; pos < users.length; pos++) {
