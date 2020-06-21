@@ -36,7 +36,7 @@ function calculateIncome(revenues, expenses) {
 for (let user of users) {
     let income = calculateIncome(user.revenues, user.expenses)
     
-    if (income > 0) {
+    if (income >= 0) {
         console.log(`${user.name} has a positive balance of ${income.toFixed(2)}`)
     } else {
         console.log(`${user.name} has a negative balance of ${income.toFixed(2)}`)
