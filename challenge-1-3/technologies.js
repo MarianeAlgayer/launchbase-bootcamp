@@ -8,12 +8,22 @@ const users = [
 
 // Solution 01 - for statement
 /* for (let pos = 0; pos < users.length; pos++) {
-    console.log(`${users[pos].name} works with ${users[pos].technologies}`)
+
+    let technologies = ''
+    for (let k = 0; k < users[pos].technologies.length; k++) {
+        if (k == 0) {
+            technologies = users[pos].technologies[k]
+        } else {
+            technologies += ', ' + users[pos].technologies[k]
+        }
+    }
+
+    console.log(`${users[pos].name} works with ${technologies}`)
 } */
 
 // Solution 02 - for/in statement
 /* for (let pos in users) {
-    console.log(`${users[pos].name} works with ${users[pos].technologies}`)
+    console.log(`${users[pos].name} works with ${users[pos].technologies.join(', ')}`)
 } */
 
 // Solution 03 - for/of statement
