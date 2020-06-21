@@ -1,18 +1,18 @@
 // Users and technologies
 
 const users = [
-    { name: 'Carlos', technologies: ['HTML', 'CSS'] },
-    { name: 'Jasmine', technologies: ['JavaScript', 'CSS'] },
-    { name: 'Tuane', technologies: ['HTML', 'Node.js'] }
+    {name: 'Carlos', technologies: ['HTML', 'CSS']},
+    {name: 'Jasmine', technologies: ['JavaScript', 'CSS']},
+    {name: 'Tuane', technologies: ['HTML', 'Node.js']}
 ]
 
 // Solution 01 - for statement
-/* for ( let pos = 0; pos < users.length; pos++ ) {
+/* for (let pos = 0; pos < users.length; pos++) {
     console.log(`${users[pos].name} works with ${users[pos].technologies}`)
 } */
 
 // Solution 02 - for/in statement
-/* for ( let pos in users) {
+/* for (let pos in users) {
     console.log(`${users[pos].name} works with ${users[pos].technologies}`)
 } */
 
