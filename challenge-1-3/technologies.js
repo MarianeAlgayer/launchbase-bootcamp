@@ -35,15 +35,18 @@ for (let user of users) {
 
 function checkIfUseCSS(user) {
     for (let technology of user.technologies) {
-        if (technology == 'CSS') return true
+        if (technology == 'CSS') {
+            return true
+        }
     }
 
     return false
 }
 
-for (let pos = 0; pos < users.length; pos++) {
-    const worksWithCSS = checkIfUseCSS(users[pos])
+for (let user of users) {
+    const worksWithCSS = checkIfUseCSS(user)
+    
     if (worksWithCSS) {
-        console.log(`User ${users[pos].name} works with CSS.`)
+        console.log(`User ${user.name} works with CSS`)
     }
 }
