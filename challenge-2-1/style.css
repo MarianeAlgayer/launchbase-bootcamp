@@ -17,8 +17,17 @@ header {
     padding: 30px;
 }
 
+#logo-rocketseat img {
+    position: absolute;
+    padding-right: 35px;
+    border-right: 0.5px solid white;
+    left: 200px;
+    top: 25px;
+}
+
 #menu {
-    text-align: center;
+    text-align: left;
+    margin-left: 250px;
 }
 
 #menu a {
