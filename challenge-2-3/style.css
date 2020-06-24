@@ -1,0 +1,324 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-rocket: #7159C1;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/*== INDEX ==*/
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #7159C1;
+    padding: 30px;
+    width: 100%;
+}
+
+#logo-rocketseat a img {
+    padding-right: 35px;
+    border-right: 0.5px solid white;
+    position: absolute;
+    left: 250px;
+    top: 25px;
+}
+
+#social img {
+    position: absolute;
+    opacity: 0.8;
+    width: 30px;
+    top: 25px;
+}
+
+#menu {
+    text-align: left;
+    margin-left: 300px;
+}
+
+#menu a {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    
+    margin: 0px 15px;
+    padding-bottom: 5px;
+}
+
+#menu a:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid white;
+    transition: color 200ms;
+}
+
+#content div#text {
+    padding: 30px;
+    margin: 100px 300px;
+    max-width: 520px;
+}
+
+#content div#text h1 {
+    color:  #7159C1;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+#content div#text h2 {
+    color: #4B4B4B;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 15px;
+}
+
+#content div#text h3 {
+    color:  #7159C1;
+    opacity: 0.8;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+
+#content div#text p {
+    color: #4B4B4B;
+    opacity: 0.8;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.draw img {
+    position: absolute;
+    width: 450px;
+    top: 250px;
+    left: 930px;
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #F1EFFF;
+    width: 100%;
+    
+    padding: 30px;
+    position: relative;
+    bottom: -50px;
+}
+
+footer p {
+    color: #4B4B4B;
+    text-align: left;
+    margin-left: 200px;
+}
+
+/*== ABOUT ==*/
+
+.logo-rocketseat-circle img {
+    position: absolute;
+    width: 300px;
+    top: 220px;
+    left: 970px;
+    border-radius: 50%;
+    border: 20px #7159C1 groove;
+    opacity: 0.9;
+}
+
+#technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 320px;
+    margin-left: 320px;
+}
+
+#technologies p {
+    border-radius: 30px;
+    background-color:  #F1EFFF;
+    color: #4B4B4B;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 50px 150px 50px 150px;
+    padding: 50px;
+}
+
+#technologies p img.js {
+    border-radius: 20px;
+    position: absolute;
+    top: 680px;
+    left: 450px;
+    width: 80px;
+}
+
+#technologies p img.node {
+    border-radius: 20px;
+    position: absolute;
+    top: 680px;
+    left: 975px;
+    width: 80px;
+}
+
+#technologies p img.reactjs {
+    border-radius: 20px;
+    position: absolute;
+    top: 905px;
+    left: 450px;
+    width: 80px;
+}
+
+#technologies p img.reactnative {
+    border-radius: 20px;
+    position: absolute;
+    top: 905px;
+    left: 975px;
+    width: 80px;
+}
+
+/*== CONTENTS ==*/
+
+header#header-contents {
+    background-color: #0B0A0D;
+    padding: 30px;
+    width: 100%;
+}
+
+body#body-contents {
+    background-image: url(https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-color: #0B0A0D;
+    font-family: 'Roboto', sans-serif;
+}
+
+#slogan h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    text-shadow: 5px 5px 10px  rgba(255, 255, 255, 0.8);
+
+    margin: 50px 0px 10px 0px;
+    padding: 20px;
+}
+
+#slogan img {
+    width: 10%;
+    display: block;
+    margin: 0px auto 20px auto;
+    opacity: 0.8;
+}
+
+#cards {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: rgba(19, 18, 23, 0.9);
+    text-align: center;
+    padding: 100px 10px 100px 10px;
+    margin: 50px 20px 50px 20px;
+}
+.card-content,
+.card-info {
+    padding: 30px;
+    margin: 10px;
+}
+
+.card-info {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-content,
+.card-info p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.card-info p.card-price {
+    color: #0B0A0D;
+    border-radius: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+footer#footer-contents {
+    background-color: #0B0A0D;
+    width: 100%;
+    
+    padding: 30px;
+    position: relative;
+    bottom: -50px;
+}
+
+/*== MODAL ==*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin: 10vh auto;
+    position: relative;
+}
+
+.modal .max-modal {
+    position: absolute;
+    right: 30px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.modal .close-modal {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+
+/*== MODAL.ACTIVE ==*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.max {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 6%;
+}
