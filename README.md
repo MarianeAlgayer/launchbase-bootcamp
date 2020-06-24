@@ -13,7 +13,7 @@
 - Module 2 - Getting Started with Front-end Development
     - [Challenge 2-1: First HTML File](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md)
     - [Challenge 2-2: Description Page](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md)
-    - [Challenge 2-3:](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
+    - [Challenge 2-3: Courses Page and Iframe](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
 
 ## 📝 License
 This project is under **MIT license**.
