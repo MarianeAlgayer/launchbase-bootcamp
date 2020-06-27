@@ -15,7 +15,7 @@
 
 #content {
     width: 90%;
-    max-width: 110vh;
+    max-width: 100vh;
     margin: 10vh auto 10vh auto;
 }
 
@@ -23,15 +23,14 @@
 
 header#navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #7159C1;
-    padding: 2vh 45vh 2vh 45vh;
+    padding: 2vh 0 2vh 0;
 }
 
 #logo-rocketseat img {
-    padding-right: 50px;
-    border-right: 1px solid white;
+    margin-right: 3vh;
 }
 
 #menu a {
@@ -43,12 +42,13 @@ header#navigation {
     margin: 0 2vh 0 2vh;
 }
 
-#social img {
-    opacity: 0.8;
-    width: 3.5vh;
+#social {
+    margin-left: 3vh;
 }
 
-#social a {
+#social img {
+    opacity: 0.8;
+    width: 3vh;
     margin: 0 2vh 0 2vh;
 }
 
@@ -69,5 +69,9 @@ footer {
 
 footer p {
     color: #4B4B4B;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: lighter;
     padding: 3.5vh;
 }

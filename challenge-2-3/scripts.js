@@ -4,9 +4,9 @@ const cards = document.querySelectorAll('.card')
 
 for (let card of cards) {
     card.addEventListener('click', function(){
-        const videoId = card.getAttribute('id')
+        const siteId = card.getAttribute('id')
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${videoId}`
+        modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${siteId}`
     })
 }
 
