@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#text h1 img {
+    width: 350px;
+    margin-bottom: 5vh;
+}
+
+#text h2 {
+    color: #4B4B4B;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 5vh;
+}
+
+#text h3 {
+    color:  #7159C1;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#text p {
+    color: #4B4B4B;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#image img{
+    width: 40vw;
+    margin: 5vh 0 0 30vh;
+    opacity: 0.9;
+}
