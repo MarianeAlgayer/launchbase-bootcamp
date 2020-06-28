@@ -11,10 +11,6 @@
 
 ---
 
-<h1 align="center">
-    <img src="https://raw.githubusercontent.com/MarianeAlgayer/bootcamp-launchbase/master/module-2/challenges-2/assets/module-2-gif.gif">
-</h1>
-
 ## 📝 License
 This project is under **MIT license**.
 
