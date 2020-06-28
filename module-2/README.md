@@ -9,8 +9,10 @@
     - [Challenge 2-2: Description Page](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md)
     - [Challenge 2-3: Courses Page and Iframe](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
 
+---
+
 <h1 align="center">
-    <img src="module-2\challenges-2\assets\challenges-2-gif.gif">
+    <img src="https://raw.githubusercontent.com/MarianeAlgayer/bootcamp-launchbase/master/module-2/challenges-2/assets/module-2-gif.gif">
 </h1>
 
 ## 📝 License
