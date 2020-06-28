@@ -10,10 +10,15 @@
     - Challenge 1-3: Functions and Loops
     - Challenge 1-4: Application: Banking Operations
 
-- [Module 2 - Getting Started with Front-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-2/challenges-2)
+- [Module 2 - Getting Started with Front-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-2)
     - Challenge 2-1: First HTML File
     - Challenge 2-2: Description Page
     - Challenge 2-3: Courses Page and Iframe
+
+- [Module 3 - Getting Started with Back-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-3)
+    - Challenge 3-1: Create your first Server
+    - Challenge 3-2: Nunjucks files and dynamic data
+    - Challenge 3-3: Course description page
 
 ## 📝 License
 This project is under **MIT license**.
