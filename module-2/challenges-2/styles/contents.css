@@ -3,10 +3,10 @@
 
 header#navigation-contents {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #0B0A0D;
-    padding: 2vh 45vh 2vh 45vh;
+    padding: 2vh 0 2vh 0;
 }
 
 body#body-contents {
