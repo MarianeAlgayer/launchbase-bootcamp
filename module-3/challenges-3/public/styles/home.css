@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#text h1 img {
+    width: 250px;
+    margin-bottom: 5vh;
+}
+
+#text h2 {
+    color: #4B4B4B;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 5vh;
+}
+
+#text h3 {
+    max-width: 350px;
+    color:  #7159C1;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 28px;
+    
+}
+
+#image img{
+    width: 700px;
+    margin: 5vh 0 0 20vh;
+}
