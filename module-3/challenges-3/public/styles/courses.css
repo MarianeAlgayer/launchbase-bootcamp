@@ -15,6 +15,7 @@ body {
 
 .card {
     background-color: rgba(19, 18, 23, 0.9);
+    display: grid;
     text-align: center;
     padding: 100px 25px;
     margin: 0 25px;
@@ -31,8 +32,9 @@ body {
 
 .card-info {
     display: grid;
-    margin-top: 30px;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .card-content,

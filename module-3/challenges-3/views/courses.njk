@@ -13,44 +13,22 @@
 
     <main id="content">
         <section id="cards">
-            <div class="card" id="starter">
-                <div class="card-image-container">
-                    <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Starter">
-                </div>
-                <div class="card-content">
-                    <p><span style="color: #7159C1;">Improve your programming skills</span> and stand out in the job marked with this completely free course</p>
-                </div>
-                <div class="card-info">
-                    <p>5 MODULES</p>
-                    <p class="card-price">FREE</p>
-                </div>
-            </div>
 
-            <div class="card" id="launchbase">
-                <div class="card-image-container">
-                    <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="LaunchBase">
-                </div>
-                <div class="card-content">
-                    <p><span style="color: #FD951F;">Master programming from scratch</span> and have access to the best opportunities in the market</p>
-                </div>
-                <div class="card-info">
-                    <p>7 MODULES</p>
-                    <p class="card-price">BUY NOW</p>
-                </div>
-            </div>
-
-            <div class="card" id="gostack">
-                <div class="card-image-container">
-                    <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="GoStack">
-                    <div class="card-content">    
-                        <p><span style="color: #04D361;">Immersive training</span> in the latest web and mobile development technologies</p>
+            {% for item in items %}
+                <div class="card" id="{{ item.id }}">
+                    <div class="card-image-container">
+                        <img src="{{ item.image }}" alt="{{ item.id }}">
+                    </div>
+                    <div class="card-content">
+                        <p>{{ item.description }}</p>
                     </div>
                     <div class="card-info">
-                        <p>7 MODULES</p>
-                        <p class="card-price">BUY NOW</p>
+                        <p>{{ item.modules }}</p>
+                        <p class="card-price">{{ item.price }}</p>
                     </div>
                 </div>
-            </div>
+            {% endfor %}
+
         </section>
 
         <div class="modal-overlay">
