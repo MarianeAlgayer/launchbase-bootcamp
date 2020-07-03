@@ -3,7 +3,9 @@
 
 :root {
     --color-rocket: #7159C1;
-    --light-purple: #F1EFFF;
+    --color-green: #04D361;
+    --color-orange: #FD951F;
+    --color-dark: #0B0A0D;
     --text-grey: #4B4B4B;
 }
 
@@ -17,7 +19,7 @@
 
 #content {
     width: 90%;
-    max-width: 800px;
+    max-width: 1300px;
     margin: 100px auto 100px auto;
     text-align: justify;
 }
@@ -25,7 +27,7 @@
 /*== MENU ==*/
 
 header#navigation {
-    background-color: var(--color-rocket);
+    background-color: var(--color-dark);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,14 +65,14 @@ header#navigation {
 /*== FOOTER ==*/
 
 footer {
-    background-color: var(--light-purple);
+    background-color: var(--color-dark);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 footer p {
-    color: var(--text-grey);
+    color: white;
     font-size: 14px;
     line-height: 24px;
     font-weight: lighter;

@@ -3,22 +3,23 @@
 #content img {
     width: 450px;
     display: block;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 10px auto;
 }
 
-#text h1 {
-    color:  #7159C1;
-    font-size: 50px;
-    line-height: 60px;
+#text-not-found h1 {
+    color: var(--color-rocket);
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
     text-align: center;
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
-#text h2 {
-    color: #4B4B4B;
+#text-not-found h2 {
+    color: var(--text-grey);
     font-size: 20px;
     line-height: 30px;
+    font-weight: normal;
     text-align: center;
-    padding: 10px;
+    padding: 0 220px;
 }

@@ -2,27 +2,26 @@
 
     header#navigation {
         justify-content: space-around;
-        padding: 2vh 2vh 2vh 2vh;
+        padding: 20px;
     }
 
     #logo-rocketseat img {
-        width: 5vh;
+        width: 35px;
+        margin: 0;
     }
     
     #menu {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
     #menu a {
         font-size: 14px;
         line-height: 24px;
-        margin: 1px 0;
+        margin: 0 0 5px 0;
     }
     
     #social {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
         margin: 0;
     }
 
@@ -33,35 +32,26 @@
     /*== HOME and ABOUT ==*/
 
     #text h1 img {
-        width: 150px;
-        margin-bottom: 5vh;
+        width: 180px;
+        margin-bottom: 20px;
     }
     
     #text h2 {
-        color: #4B4B4B;
         font-size: 20px;
         line-height: 30px;
-        margin-bottom: 2vh;
+        margin-bottom: 20px;
     }
     
     #text h3 {
-        color:  #7159C1;
-        font-weight: lighter;
         font-size: 18px;
         line-height: 28px;
-        
-    }
-    
-    #text p {
-        color: #4B4B4B;
-        font-weight: lighter;
-        font-size: 18px;
-        line-height: 28px;
+        max-width: 100%;
     }
 
-    #content #image img{
-        width: 70vw;
-        margin: 8vh 0 0 12vh;
+    #background-home img {
+        width: 350px;
+        display: block;
+        margin: 100px auto 0 auto;
     }
 
     .column {
@@ -81,24 +71,20 @@
 
     /*== COURSES ==*/
 
-    header#navigation-contents {
-        justify-content: space-around;
-        padding: 2vh 2vh 2vh 2vh;
-        background-color: #0B0A0D;
-    }
-
     #cards {
-        max-width: 450px;
-        margin: 0 auto;
+        max-width: 430px;
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    .card {
+        margin: 30px 0;
+    }
+
     .modal {
-        background-color: white;
         width: 75%;
         height: 75%;
-        margin: 10vh auto;
+        margin: 90px auto;
         position: relative;
     }
 
@@ -106,5 +92,9 @@
 
     #not-found img {
         width: 300px;
+    }
+
+    #text-not-found h2 {
+        padding: 0 80px;
     }
 }
