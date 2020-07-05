@@ -62,11 +62,11 @@
     .technologies img.technology {
         border-radius: 50%;
         width: 50px;
-        margin: 10px 0 10px 0;
+        margin: 20px 0 20px 0;
     }
     
     .technologies img.rocket {
-        width: 200px;
+        width: 230px;
     }
 
     /*== COURSES ==*/
@@ -78,14 +78,22 @@
     }
 
     .card {
-        margin: 30px 0;
+        margin: 0 0 30px 0;
+        padding: 50px 25px;
     }
 
-    .modal {
-        width: 75%;
-        height: 75%;
-        margin: 90px auto;
-        position: relative;
+    /*== COURSE-DESCRIPTION ==*/
+
+    .card-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 100px auto;
+    }
+
+    .card-text img {
+        display: block;
+        margin: 50px auto 0;
+        max-width: 80%;  
     }
 
     /*== NOT-FOUND ==*/

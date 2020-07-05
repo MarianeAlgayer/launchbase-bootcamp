@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../assets/background-courses.jpeg);
+    background-size: cover;
+    background-color: var(--color-dark);
+}
+
+.course {
+    background-color: rgba(19, 18, 23, 0.8);
+    max-width: 800px;
+    display: grid;
+    padding: 100px 25px;
+    margin: 0 auto;
+}
+
+.course-logo-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.course-content {
+    max-width: 400px;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.course-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    max-width: 700px;
+    text-align: justify;
+    margin: 150px auto;
+}
+
+.course-text h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.course-content p,
+.course-text p {
+    color: #868687;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.course-text img {
+    max-width: 100%;
+}
+
+.course-info {
+    margin: 0 auto;
+}
+
+.course-info a {
+    color: var(--color-dark);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.course-info:hover {
+    transform: scale(1.05);
+}
+
+#starter .course-info a {
+    background-color: var(--color-rocket);
+}
+
+#launchbase .course-info a {
+    background-color: var(--color-orange);
+}
+
+#gostack .course-info a {
+    background-color: var(--color-green);
+}

@@ -1,0 +1,39 @@
+{% extends 'layout-dark.njk' %}
+
+{% block head %}
+
+    <title>Rocketseat | {{course.id}}</title>
+
+    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/styles/course-description.css">
+
+{% endblock %}
+
+{% block content %}
+
+    <main id="content">
+        <div class="course" id="{{ course.id }}">
+            <div class="course-logo-container">
+                <img src="{{ course.logo }}" alt="logo - {{ course.id }}">
+            </div>
+            <div class="course-content">
+                <p>{{ course.description }}</p>
+            </div>
+            <div class="course-text">
+                <section>
+                    <h1>What is this course about?</h1>
+                    <p>{{ course.text }}</p>
+                </section>
+                <section>
+                    <img src="{{ course.image }}" alt="image - {{ course.id }}">
+                </section>
+            </div>
+            <div class="course-info">
+                <a href="https://rocketseat.com.br/{{ course.id }}" target="_blank">Guarantee your place in the next class!</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}
