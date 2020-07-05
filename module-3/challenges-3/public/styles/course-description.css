@@ -7,7 +7,7 @@ body {
 }
 
 .course {
-    background-color: rgba(19, 18, 23, 0.8);
+    background-color: rgba(29, 29, 36, 0.8);
     max-width: 800px;
     display: grid;
     padding: 100px 25px;
@@ -42,7 +42,7 @@ body {
 
 .course-description p,
 .course-text p {
-    color: #868687;
+    color: var(--text-grey);
     font-size: 18px;
     line-height: 28px;
 }
