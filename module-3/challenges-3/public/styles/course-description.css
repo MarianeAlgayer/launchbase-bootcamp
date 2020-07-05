@@ -19,14 +19,14 @@ body {
     margin: 0 auto;
 }
 
-.course-content {
+.course-description {
     max-width: 400px;
     text-align: center;
     padding-top: 15px;
     margin: 0 auto;
 }
 
-.course-text {
+.course-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
@@ -40,14 +40,14 @@ body {
     margin-bottom: 15px;
 }
 
-.course-content p,
+.course-description p,
 .course-text p {
     color: #868687;
     font-size: 18px;
     line-height: 28px;
 }
 
-.course-text img {
+.course-image-container img {
     max-width: 100%;
 }
 

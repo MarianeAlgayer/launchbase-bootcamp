@@ -36,14 +36,14 @@ server.get('/courses/:id', function(req, res) {
     })
 
     if (!course) {
-        return res.send('Course not found')
+        return res.render('not-found')
     }
 
     return res.render('course-description', { course: course })
 })
 
 server.use(function(req, res) {
-    res.status(404).render("not-found")
+    res.status(404).render('not-found')
 })
 
 server.listen(5000, function() {
