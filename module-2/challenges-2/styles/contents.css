@@ -6,7 +6,7 @@ header#navigation-contents {
     justify-content: center;
     align-items: center;
     background-color: #0B0A0D;
-    padding: 2vh 0 2vh 0;
+    padding: 15px 0;
 }
 
 body#body-contents {
@@ -26,8 +26,8 @@ body#body-contents {
 .card {
     background-color: rgba(19, 18, 23, 0.9);
     text-align: center;
-    padding: 100px 10px 100px 10px;
-    margin: 50px 20px 50px 20px;
+    padding: 100px 10px;
+    margin: 50px 20px;
 }
 
 .card:hover {
@@ -56,7 +56,7 @@ body#body-contents {
 .card-info p.card-price {
     color: #0B0A0D;
     border-radius: 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
 }
 
 #footer-contents {
@@ -68,7 +68,7 @@ body#body-contents {
 
 #footer-contents p {
     color: #4B4B4B;
-    padding: 3.5vh;
+    padding: 30px;
 }
 
 /*== MODAL ==*/
@@ -87,7 +87,7 @@ body#body-contents {
     background-color: white;
     width: 50%;
     height: 50%;
-    margin: 10vh auto;
+    margin: 10% auto;
     position: relative;
 }
 

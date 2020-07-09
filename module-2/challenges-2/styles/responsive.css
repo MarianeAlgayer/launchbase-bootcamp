@@ -1,12 +1,12 @@
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
     header#navigation {
         justify-content: space-around;
-        padding: 2vh 2vh 2vh 2vh;
+        padding: 15px;
     }
 
     #logo-rocketseat img {
-        width: 5vh;
+        width: 30px;
     }
     
     #menu {
@@ -32,36 +32,13 @@
 
     /*== HOME and ABOUT ==*/
 
-    #text h1 img {
-        width: 150px;
-        margin-bottom: 5vh;
-    }
-    
-    #text h2 {
-        color: #4B4B4B;
-        font-size: 20px;
-        line-height: 30px;
-        margin-bottom: 2vh;
-    }
-    
     #text h3 {
-        color:  #7159C1;
-        font-weight: lighter;
-        font-size: 18px;
-        line-height: 28px;
-        
-    }
-    
-    #text p {
-        color: #4B4B4B;
-        font-weight: lighter;
-        font-size: 18px;
-        line-height: 28px;
+        max-width: 850px;
     }
 
     #content #image img{
-        width: 70vw;
-        margin: 8vh 0 0 12vh;
+        width: 100%;
+        margin: 50px 0;
     }
 
     .column {
@@ -83,7 +60,7 @@
 
     header#navigation-contents {
         justify-content: space-around;
-        padding: 2vh 2vh 2vh 2vh;
+        padding: 15px;
         background-color: #0B0A0D;
     }
 
@@ -98,7 +75,7 @@
         background-color: white;
         width: 75%;
         height: 75%;
-        margin: 10vh auto;
+        margin: 20% auto;
         position: relative;
     }
 }

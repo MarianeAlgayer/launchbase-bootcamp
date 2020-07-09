@@ -15,8 +15,9 @@
 
 #content {
     width: 90%;
-    max-width: 100vh;
-    margin: 10vh auto 10vh auto;
+    max-width: 850px;
+    min-height: 600px;
+    margin: 100px auto;
 }
 
 /*== MENU ==*/
@@ -26,11 +27,11 @@ header#navigation {
     justify-content: center;
     align-items: center;
     background-color: #7159C1;
-    padding: 2vh 0 2vh 0;
+    padding: 15px 0;
 }
 
 #logo-rocketseat img {
-    margin-right: 3vh;
+    margin-right: 20px;
 }
 
 #menu a {
@@ -39,17 +40,17 @@ header#navigation {
     font-size: 15px;
     line-height: 25px;
     text-decoration: none;
-    margin: 0 2vh 0 2vh;
+    margin: 0 20px;
 }
 
 #social {
-    margin-left: 3vh;
+    margin-left: 20px;
 }
 
 #social img {
     opacity: 0.8;
-    width: 3vh;
-    margin: 0 2vh 0 2vh;
+    width: 25px;
+    margin: 0 20px;
 }
 
 #menu a:hover {
@@ -73,5 +74,5 @@ footer p {
     font-size: 14px;
     line-height: 24px;
     font-weight: lighter;
-    padding: 3.5vh;
+    padding: 30px;
 }
