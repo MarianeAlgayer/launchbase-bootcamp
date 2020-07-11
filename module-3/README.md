@@ -15,7 +15,7 @@
     <img src="challenges-3\public\assets\challenge-3-desktop.gif" width="600px">
 </h1>
 <h1 align="center">
-    <img src="challenges-3\public\assets\challenge-3-mobile.gif" width="250px">
+    <img src="challenges-3\public\assets\challenge-3-mobile.gif" width="250px" style="border-radius:30px">
 </h1>
 
 ## 📝 License
