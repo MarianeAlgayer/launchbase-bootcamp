@@ -8,9 +8,9 @@ body {
 
 .course {
     background-color: rgba(29, 29, 36, 0.8);
-    max-width: 800px;
     display: grid;
-    padding: 100px 25px;
+    max-width: 800px;
+    padding: 100px 50px;
     margin: 0 auto;
 }
 
@@ -20,8 +20,8 @@ body {
 }
 
 .course-description {
-    max-width: 400px;
     text-align: center;
+    max-width: 400px;
     padding-top: 15px;
     margin: 0 auto;
 }
@@ -31,12 +31,13 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     max-width: 700px;
-    text-align: justify;
     margin: 150px auto;
 }
 
 .course-text h1 {
     color: white;
+    font-size: 24px;
+    line-height: 34px;
     margin-bottom: 15px;
 }
 

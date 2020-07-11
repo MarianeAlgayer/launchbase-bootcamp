@@ -29,7 +29,7 @@
     /* menu-fullscreen */
 
     .header.on {
-        background-color: var(--color-rocket);
+        background-color: var(--color-dark);
         
         width: 100vw;
         height: 100vh;

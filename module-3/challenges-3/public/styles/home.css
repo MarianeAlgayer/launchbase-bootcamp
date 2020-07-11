@@ -13,7 +13,7 @@
 }
 
 #text h3 {
-    color:  var(--color-rocket);
+    color: var(--color-rocket);
     font-size: 18px;
     line-height: 28px;
     font-weight: lighter;
@@ -23,4 +23,5 @@
 #background-home img {
     width: 700px;
     margin: 50px 0 0 130px;
+    display: block;
 }

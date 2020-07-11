@@ -8,54 +8,62 @@
 }
 
 * {
+    box-sizing: border-box;
     padding: 0;
     border: 0;
     margin: 0;
+}
 
+body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding-bottom: 80px;
+    min-height: 100vh;
 }
 
 #content {
     width: 90%;
     max-width: 800px;
-    margin: 100px auto 100px auto;
+    margin: 100px auto;
     text-align: justify;
 }
 
 /*== MENU ==*/
 
-header#navigation {
+header {
     background-color: var(--color-rocket);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px 0 20px 0;
+    height: 80px;
 }
 
-#logo-rocketseat img {
-    margin-right: 20px;
+#menu {
+    display: flex;
+    align-items: center;
 }
 
-#menu a {
+a.menu-logo {
+    padding-right: 30px;
+    border-right: 1px solid white;
+}
+
+a.menu-text {
     color: white;
     font-size: 15px;
     line-height: 25px;
     font-weight: bold;
     text-decoration: none;
     padding-bottom: 3px;
-    margin: 0 20px 0 20px;
-}
-
-#social {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 #social img {
     width: 20px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px;
 }
 
-#menu a:hover {
+a.menu-text:hover {
     border-bottom: 2px solid white;
     transition: 200ms;
 }
@@ -67,6 +75,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
 }
 
 footer p {
@@ -74,5 +86,4 @@ footer p {
     font-size: 14px;
     line-height: 24px;
     font-weight: lighter;
-    padding: 30px;
 }
