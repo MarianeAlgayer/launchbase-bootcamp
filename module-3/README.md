@@ -14,6 +14,9 @@
 <h1 align="center">
     <img src="challenges-3/public/assets/challenge-3-desktop.gif" width="600px">
 </h1>
+<h1 align="center">
+    <img src="challenges-3/public/assets/challenge-3-mobile.gif" width="200px">
+</h1>
 
 ## 📝 License
 This project is under **MIT license**.
