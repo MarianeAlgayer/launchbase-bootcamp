@@ -29,8 +29,6 @@
     /* menu-fullscreen */
 
     .header.on {
-        background-color: var(--color-rocket);
-        
         width: 100vw;
         height: 100vh;
         z-index: 10;
