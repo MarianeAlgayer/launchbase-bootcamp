@@ -22,7 +22,7 @@
 
 - [Module 4 - Gym Manager](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-4)
     - Challenge 4-1: Header
-    - Challenge 4-2: Professor card
+    - Challenge 4-2: Teacher card
     - Challenge 4-3: Form and teacher registration route
     - Challenge 4-4: Presentation, editing and formatting of a teacher's data
     - Challenge 4-5: HTTP: PUT and DELETE
