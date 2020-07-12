@@ -24,10 +24,10 @@
     - Challenge 4-1: Header
     - Challenge 4-2: Teacher card
     - Challenge 4-3: Form and teacher registration route
-    - Challenge 4-4: Presentation, editing and formatting of a teacher's data
+    - Challenge 4-4: Structuring a teacher's data
     - Challenge 4-5: HTTP: PUT and DELETE
     - Challenge 4-6: List of teachers
-    - Challenge 4-7: Structuring students's data
+    - Challenge 4-7: Structuring a student's data
 
 ## 📝 License
 This project is under **MIT license**.
