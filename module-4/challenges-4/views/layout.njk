@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% block head %}
+        
+            <title>Tutoring | Your online tutoring platform</title>
+
+        {% endblock head %}
+
+        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <div id="website-title">
+            <img src="/assets/book.svg" class="book" alt="book">
+            <h1>TUTORING | Your online tutoring platform</h1>
+        </div>
+        <header>
+            <div id="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <nav id="menu">
+                <a href="/tutors" class="active">TUTORS</a>
+                <a href="/students">STUDENTS</a>
+            </nav>
+            <span class="material-icons">close</span>
+        </header>
+
+        {% block content %}
+
+        {% endblock content %}
+        
+        <footer>
+            <p>Made by <strong>Mariane Algayer</strong> &copy;2020</p>
+        </footer>
+    </body>
+</html>
