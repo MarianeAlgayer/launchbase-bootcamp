@@ -1,1 +1,43 @@
 @charset "UTF-8";
+
+/*== DETAILS ==*/
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-top: 1px solid var(--light-grey);
+    padding: 16px 0;
+}
+
+.details .item:first-child {
+    border: none;
+}
+
+.details .item div:nth-child(1) {
+    color: var(--medium-grey);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+}
+
+.details .item div:nth-child(2) {
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.details .item span {
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    background-color: var(--lemon-green);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin: 8px 4px 0 0;
+    display: inline-block;
+}
