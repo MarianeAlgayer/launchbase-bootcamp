@@ -18,10 +18,12 @@
 - [Challenge 2-3: Courses Page and Iframe](https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
 
 ## :computer: Result
+
 - [View code](https://github.com/MarianeAlgayer/launchbase-bootcamp/tree/master/module-2/challenges-2)
-<h1 align="center">
+
+<p align="center">
     <img src="https://raw.githubusercontent.com/MarianeAlgayer/bootcamp-launchbase/master/module-2/challenges-2/assets/challenge-2-gif.gif" width="600px">
-</h1>
+</p>
 
 ## :memo: License
 
