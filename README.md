@@ -2,6 +2,8 @@
     <img src="https://ik.imagekit.io/ms7dbkxibiu/Wallpaper_LaunchBase_-_2560x1080_-_Copia_W3sE-Xli8m.png" width="800px">
 </h1>
 
+<h2 align="center">LaunchBase Bootcamp Challenges</h2>
+
 <p align="center">
     <a href="#rocket-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#book-modules">Modules</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -9,7 +11,7 @@
 </p>
 
 ## :rocket: About
-LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
+The LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
 
 ## :book: Modules
 - [Module 1 - Introduction to Web Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-1)
