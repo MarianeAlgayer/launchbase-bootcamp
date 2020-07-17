@@ -3,15 +3,15 @@
 </h1>
 
 <p align="center">
-    <a href="#🚀-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#📖-modules">Modules</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#📝-license">License</a>
+    <a href="#rocket-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#book-modules">Modules</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#memo-license">License</a>
 </p>
 
-## 🚀 About
+## :rocket: About
 LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
 
-## 📖 Modules
+## :book: Modules
 - [Module 1 - Introduction to Web Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-1)
 - [Module 2 - Getting Started with Front-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-2)
 - [Module 3 - Getting Started with Back-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-3)
@@ -19,7 +19,7 @@ LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of 
 
 🚧 In progress 🚧
 
-## 📝 License
+## :memo: License
 
 This project is under **MIT license**.
 
