@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://ik.imagekit.io/ms7dbkxibiu/Wallpaper_LaunchBase_-_2560x1080_-_Copia_W3sE-Xli8m.png" width="900px">
+    <img src="https://ik.imagekit.io/ms7dbkxibiu/Wallpaper_LaunchBase_-_2560x1080_-_Copia_W3sE-Xli8m.png" width="1000px">
 </h1>
 
 <h2 align="center">LaunchBase Bootcamp Challenges</h2>
