@@ -1,35 +1,26 @@
 <h1 align="center">
-    <img src="https://ik.imagekit.io/ms7dbkxibiu/launchbase-logo_hQNMVS9aU.png" width="250px">
+    <img src="https://ik.imagekit.io/ms7dbkxibiu/Wallpaper_LaunchBase_-_2560x1080_-_Copia_W3sE-Xli8m.png" width="800px">
 </h1>
 
-## 🚀 Table of Contents
+<p align="center">
+    <a href="#🚀-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#📖-modules">Modules</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#📝-license">License</a>
+</p>
 
+## 🚀 About
+LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
+
+## 📖 Modules
 - [Module 1 - Introduction to Web Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-1)
-    - Challenge 1-1: First Steps with JavaScript
-    - Challenge 1-2: Objects and Arrays
-    - Challenge 1-3: Functions and Loops
-    - Challenge 1-4: Application: Banking Operations
-
 - [Module 2 - Getting Started with Front-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-2)
-    - Challenge 2-1: First HTML File
-    - Challenge 2-2: Description Page
-    - Challenge 2-3: Courses Page and Iframe
-
 - [Module 3 - Getting Started with Back-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-3)
-    - Challenge 3-1: Create your first Server
-    - Challenge 3-2: Nunjucks files and dynamic data
-    - Challenge 3-3: Course description page
-
 - [Module 4 - Gym Manager](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-4)
-    - Challenge 4-1: Header
-    - Challenge 4-2: Teacher card
-    - Challenge 4-3: Form and teacher registration route
-    - Challenge 4-4: Structuring a teacher's data
-    - Challenge 4-5: HTTP: PUT and DELETE
-    - Challenge 4-6: List of teachers
-    - Challenge 4-7: Structuring a student's data
+
+🚧 In progress 🚧
 
 ## 📝 License
+
 This project is under **MIT license**.
 
 ---
