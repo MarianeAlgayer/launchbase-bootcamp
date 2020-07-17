@@ -27,7 +27,7 @@
 
 🚧 In progress 🚧
 
-## 📝 License
+## :memo: License
 
 This project is under **MIT license**.
 
