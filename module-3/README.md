@@ -33,7 +33,7 @@ During this module I also started my studies on Responsive Web Design and challe
     <img src="challenges-3/public/assets/challenge-3-mobile.gif" width="200px">
 </p>
 
-## 📝 License
+## :memo: License
 
 This project is under **MIT license**.
 
