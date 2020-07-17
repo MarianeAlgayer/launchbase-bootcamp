@@ -11,9 +11,11 @@
 </p>
 
 ## :rocket: About
+
 The LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
 
 ## :book: Modules
+
 - [Module 1 - Introduction to Web Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-1)
 - [Module 2 - Getting Started with Front-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-2)
 - [Module 3 - Getting Started with Back-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-3)
