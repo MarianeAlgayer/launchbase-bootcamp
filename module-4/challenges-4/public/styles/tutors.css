@@ -33,6 +33,7 @@
 .details .item span {
     color: black;
     font-size: 12px;
+    line-height: 22px;
     text-transform: uppercase;
 
     background-color: var(--lemon-green);
@@ -40,4 +41,44 @@
     padding: 8px 16px;
     margin: 8px 4px 0 0;
     display: inline-block;
+}
+
+/*== FORM ==*/
+
+input,
+select {
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+
+    width: 100%;
+    outline: none;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+input::placeholder {
+    color: var(--light-grey);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    color: black;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background-color: var(--lemon-green);
+    width: 100%;
+    border-radius: 16px;
+    padding: 8px;
+    margin-top: 32px;
 }

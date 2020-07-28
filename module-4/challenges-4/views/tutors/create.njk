@@ -1,0 +1,65 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Tutoring | Tutors</title>
+
+    <link rel="stylesheet" href="/styles/tutors.css">
+{% endblock head %}
+
+{% block content %}
+
+    <form id="content" action="/tutors" method="POST">
+        <section 
+            class="avatar" 
+            style="filter: grayscale(100%); background: url(https://source.unsplash.com/collection/11167123/360x560) no-repeat top center / cover">
+        </section>
+        <section class="details">
+            <div class="item">
+                <div>Avatar URL</div>
+                <div>
+                    <input type="url" name="avatar_url" placeholder="http://">
+                </div>
+            </div>
+            <div class="item">
+                <div>Full Name</div>
+                <div>
+                    <input type="text" name="full_name" placeholder="Type your full name">
+                </div>
+            </div>
+            <div class="item">
+                <div>Birthdate</div>
+                <div>
+                    <input type="date" name="birthdate">
+                </div>
+            </div>
+            <div class="item">
+                <div>Education Level</div>
+                <div>
+                    <select name="education_level">
+                        <option value="high_school">High School Diploma</option>
+                        <option value="bachelors_degree">Bachelor's Degree</option>
+                        <option value="masters_degree">Master's Degree</option>
+                        <option value="doctoral_degree">Doctoral Degree</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <div>Education Format</div>
+                <div>
+                    <span><input type="radio" name="format" value="online" checked>Online</span>
+                    <span><input type="radio" name="format" value="in_person">In-Person</span>
+                </div>
+            </div>
+            <div class="item">
+                <div>Specialty Subject Areas</div>
+                <div>
+                    <input type="text" name="subject" placeholder="Type what subjects you teach">
+                </div>
+            </div>
+
+            <button type="submit">Save</button>
+
+        </section>
+    </form>
+
+{% endblock content %}
