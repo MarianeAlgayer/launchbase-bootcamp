@@ -1,5 +1,28 @@
 const fs = require('fs')
 const data = require('./data.json')
+const { age, graduation, date } = require('./utils')
+
+// show
+exports.show = function(req, res) {
+
+    const { id } = req.params
+
+    const foundTutor = data.tutors.find(function(tutor) {
+        return tutor.id == id
+    })
+
+    if (!foundTutor) return res.send('Tutor not found!')
+
+    const tutor = {
+        ...foundTutor,
+        age: age(foundTutor.birthdate),
+        education_level: graduation(foundTutor.education_level),
+        subjects: foundTutor.subjects.split(","),
+        created_at: new Intl.DateTimeFormat("en-GB").format(foundTutor.created_at)
+    }
+
+    return res.render('tutors/show', { tutor })
+}
 
 // create
 exports.post = function(req, res) {
@@ -12,7 +35,7 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, full_name, birthdate, education_level, format, subject} = req.body
+    let {avatar_url, full_name, birthdate, education_level, format, subjects} = req.body
 
     const id = Number(data.tutors.length + 1)
     const created_at = Date.now()
@@ -25,7 +48,7 @@ exports.post = function(req, res) {
         birthdate,
         education_level,
         format,
-        subject,
+        subjects,
         created_at
     })
 
@@ -34,4 +57,23 @@ exports.post = function(req, res) {
 
         return res.redirect('/tutors')
     })
+}
+
+// edit
+exports.edit = function(req, res) {
+
+    const { id } = req.params
+
+    const foundTutor = data.tutors.find(function(tutor) {
+        return tutor.id == id
+    })
+
+    if (!foundTutor) return res.send('Tutor not found!')
+
+    const tutor = {
+        ...foundTutor,
+        birthdate: date(foundTutor.birthdate)
+    }
+
+    return res.render('tutors/edit', {tutor})
 }

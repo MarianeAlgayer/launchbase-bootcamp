@@ -1,0 +1,99 @@
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder="http://" 
+            value="{{ tutor.avatar_url }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>Full Name</div>
+    <div>
+        <input 
+            type="text" 
+            name="full_name" 
+            placeholder="Type your full name"
+            value="{{ tutor.full_name }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>Birthdate</div>
+    <div>
+        <input 
+            type="date" 
+            name="birthdate"
+            value="{{ tutor.birthdate }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>Education Level</div>
+    <div>
+        <select name="education_level">
+            <option 
+                value="high_school" 
+                {% if tutor.education_level == 'high_school' %} selected {% endif %}
+            >
+            High School Diploma
+            </option>
+            <option 
+                value="bachelors_degree"
+                {% if tutor.education_level == 'bachelors_degree' %} selected {% endif %}
+            >
+            Bachelor's Degree
+            </option>
+            <option 
+                value="masters_degree"
+                {% if tutor.education_level == 'masters_degree' %} selected {% endif %}
+            >
+            Master's Degree
+            </option>
+            <option 
+                value="doctoral_degree"
+                {% if tutor.education_level == 'doctoral_degree' %} selected {% endif %}
+            >
+            Doctoral Degree
+            </option>
+        </select>
+    </div>
+</div>
+<div class="item">
+    <div>Education Format</div>
+    <div>
+        <span>
+            <input 
+                type="radio" 
+                name="format" 
+                value="online" 
+                {% if tutor.format == 'online' %} checked {% endif %}
+            >
+            Online
+        </span>
+        <span>
+            <input 
+                type="radio" 
+                name="format" 
+                value="in_person"
+                {% if tutor.format == 'in_person' %} checked {% endif %}
+            >
+            In-Person
+        </span>
+    </div>
+</div>
+<div class="item">
+    <div>Specialty Subject Areas</div>
+    <div>
+        <input 
+            type="text" 
+            name="subject" 
+            placeholder="Type what subjects you teach"
+            value="{{ tutor.subjects }}"
+        >
+    </div>
+</div>
+
+<button type="submit">Save</button>
