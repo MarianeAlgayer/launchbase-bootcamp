@@ -12,7 +12,7 @@
 
 ## :rocket: About
 
-The LaunchBase Bootcamp is an 8-week remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
+The LaunchBase Bootcamp is a remote training focused on the fundamentals of web development. The program is based on practical coding challenges and this repository is dedicated to my solutions.
 
 ## :book: Modules
 
