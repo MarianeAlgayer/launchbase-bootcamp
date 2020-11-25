@@ -65,7 +65,7 @@ exports.edit = function(req, res) {
     const { id } = req.params
 
     const foundTutor = data.tutors.find(function(tutor) {
-        return tutor.id == id
+        return id == tutor.id
     })
 
     if (!foundTutor) return res.send('Tutor not found!')
@@ -76,4 +76,52 @@ exports.edit = function(req, res) {
     }
 
     return res.render('tutors/edit', {tutor})
+}
+
+// put - update
+exports.update = function(req, res) {
+
+    const { id } = req.body
+    /* id = Number(id) */
+    let index = 0
+
+    const foundTutor = data.tutors.find(function(tutor, foundIndex) {
+        if (id == tutor.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foundTutor) return res.send('Tutor not found!')
+
+    const tutor = {
+        ...foundTutor,
+        ...req.body,
+        birthdate: Date.parse(req.body.birthdate)
+    }
+
+    data.tutors[index] = tutor
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 4), function(err) {
+        if (err) return res.send('Write file error!')
+
+        return res.redirect(`/tutors/${id}`)
+    })
+}
+
+// delete
+exports.delete = function(req, res) {
+    const { id } = req.body
+
+    const filteredTutors = data.tutors.filter(function(tutor) {
+        return tutor.id != id
+    })
+
+    data.tutors = filteredTutors
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 4), function(err) {
+        if (err) return res.send('Write file error!')
+
+        return res.redirect('/tutors')
+    })
 }

@@ -8,19 +8,37 @@
 
 {% block content %}
 
-    <form id="content" action="/tutors" method="POST">
+    <main id="content">
         <section 
             class="avatar" 
-            style="filter: grayscale(100%); background: url(https://source.unsplash.com/collection/11167123/360x560) no-repeat top center / cover">
+            style="filter: grayscale(100%); background: url({{ tutor.avatar_url }}) no-repeat top center / cover">
         </section>
 
         <section class="details">
+            <form action="/tutors?_method=PUT" method="POST">
+                <h3>Edit</h3>
 
-            <h3>Edit</h3>
+                {% include 'tutors/fields.njk' %}
 
-            {% include 'tutors/fields.njk' %}
+                <input 
+                    type="hidden" 
+                    name="id" 
+                    value="{{ tutor.id }}"
+                >
+            </form>
 
+            <form id="form-delete" action="/tutors?_method=DELETE" method="POST">
+                <input 
+                    type="hidden" 
+                    name="id" 
+                    value="{{ tutor.id }}"
+                >
+
+                <button type="submit">Delete</button>
+            </form>
+            
         </section>
-    </form>
-
+ 
+    </main>
+    
 {% endblock content %}
