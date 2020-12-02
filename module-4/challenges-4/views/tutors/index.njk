@@ -8,40 +8,34 @@
 
 {% block content %}
 
-    <main id="content">
-        <section 
-            class="avatar" 
-            style="filter: grayscale(100%); background: url(https://source.unsplash.com/collection/11167123/360x560) no-repeat top center / cover">
-        </section>
-        <section class="details">
-            <div class="item">
-                <div>Tutor</div>
-                <div>Guilherme Saraiva</div>
-            </div>
-            <div class="item">
-                <div>Age</div>
-                <div>29</div>
-            </div>
-            <div class="item">
-                <div>Education Level</div>
-                <div>Bachelor's Degree</div>
-            </div>
-            <div class="item">
-                <div>Education Format</div>
-                <div>Online</div>
-            </div>
-            <div class="item">
-                <div>Specialty Subject Areas</div>
-                <div>
-                    <span>Mathematics</span>
-                    <span>Physics</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>Since</div>
-                <div>02/02/2020</div>
-            </div>
-        </section>
+    <main class="content table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tutor</th>
+                    <th>Specialty Subject Areas</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for tutor in tutors %}
+                    <tr>
+                        <td>
+                            <span style="filter: grayscale(100%); background-image: url({{ tutor.avatar_url }})"></span>
+                            {{ tutor.full_name }}
+                        </td>
+
+                        <td>
+                        {% for subject in tutor.subjects.split(',') %}
+                            <span class="subject">{{ subject }}</span>
+                        {% endfor %}
+                        </td>
+                        
+                        <td><a href="/tutors/{{ tutor.id }}">View</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </main>
 
 {% endblock content %}

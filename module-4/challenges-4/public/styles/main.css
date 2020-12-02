@@ -5,6 +5,7 @@
     --lemon-green: #FEF993;
     --light-grey: #CECACB;
     --medium-grey: #898989;
+    --light-purple: #f5cdffd7;
 }
 
 * {
@@ -115,7 +116,7 @@ header {
 
 /*== CONTENT ==*/
 
-#content {
+.content {
     background-color: white;
     border: 2px solid black;
 
