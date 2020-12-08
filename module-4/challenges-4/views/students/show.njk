@@ -1,0 +1,43 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Tutoring | Students</title>
+
+    <link rel="stylesheet" href="/styles/students.css">
+{% endblock head %}
+
+{% block content %}
+
+    <main class="content">
+        <section 
+            class="avatar" 
+            style="filter: grayscale(100%); background: url({{ student.avatar_url }}) no-repeat top center / cover">
+        </section>
+        <section class="details">
+            <div class="item">
+                <div>Student</div>
+                <div>{{ student.full_name }}</div>
+            </div>
+            <div class="item">
+                <div>Email</div>
+                <div>{{ student.email }}</div>
+            </div>
+            <div class="item">
+                <div>Birthday</div>
+                <div>{{ student.birthdate }}</div>
+            </div>
+            <div class="item">
+                <div>School Year</div>
+                <div>{{ student.school_year }} grade</div>
+            </div>
+            <div class="item">
+                <div>Workload</div>
+                <div>{{ student.workload }} hours</div>
+            </div>
+
+            <a href="/students/{{student.id}}/edit" class="button">Edit</a>
+
+        </section>
+    </main>
+
+{% endblock content %}

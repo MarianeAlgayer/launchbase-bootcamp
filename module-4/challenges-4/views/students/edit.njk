@@ -1,9 +1,9 @@
 {% extends 'layout.njk' %}
 
 {% block head %}
-    <title>Tutoring | Tutors</title>
+    <title>Tutoring | Students</title>
 
-    <link rel="stylesheet" href="/styles/tutors.css">
+    <link rel="stylesheet" href="/styles/students.css">
 {% endblock head %}
 
 {% block content %}
@@ -11,27 +11,27 @@
     <main class="content">
         <section 
             class="avatar" 
-            style="filter: grayscale(100%); background: url({{ tutor.avatar_url }}) no-repeat top center / cover">
+            style="filter: grayscale(100%); background: url({{ student.avatar_url }}) no-repeat top center / cover">
         </section>
 
         <section class="details">
-            <form action="/tutors?_method=PUT" method="POST">
+            <form action="/students?_method=PUT" method="POST">
                 <h3>Edit</h3>
 
-                {% include 'tutors/fields.njk' %}
+                {% include 'students/fields.njk' %}
 
                 <input 
                     type="hidden" 
                     name="id" 
-                    value="{{ tutor.id }}"
+                    value="{{ student.id }}"
                 >
             </form>
 
-            <form id="form-delete" action="/tutors?_method=DELETE" method="POST">
+            <form id="form-delete" action="/students?_method=DELETE" method="POST">
                 <input 
                     type="hidden" 
                     name="id" 
-                    value="{{ tutor.id }}"
+                    value="{{ student.id }}"
                 >
 
                 <button type="submit">Delete</button>
