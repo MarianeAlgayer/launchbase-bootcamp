@@ -25,7 +25,9 @@
 
 - [View code](https://github.com/MarianeAlgayer/launchbase-bootcamp/tree/master/module-4/challenges-4)
 
-🚧 In progress 🚧
+<p align="center">
+    <img src="challenges-4/public/assets/challenge-4-desktop.gif" width="600px">
+</p>
 
 ## :memo: License
 
