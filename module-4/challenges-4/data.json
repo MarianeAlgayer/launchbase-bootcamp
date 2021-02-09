@@ -1,4 +1,35 @@
 {
-    "students": [],
-    "tutors": []
+    "students": [
+        {
+            "id": 2,
+            "avatar_url": "https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=933&q=80",
+            "full_name": "Carrie Smith",
+            "email": "carriesmith@gmail.com",
+            "birthdate": 1023321600000,
+            "school_year": "12th",
+            "workload": "8"
+        }
+    ],
+    "tutors": [
+        {
+            "id": 1,
+            "avatar_url": "https://images.unsplash.com/flagged/photo-1561530822-923d268fa0a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3456&q=80",
+            "full_name": "Thomas Curtis",
+            "birthdate": 642297600000,
+            "education_level": "bachelors_degree",
+            "format": "online",
+            "subjects": "Python, JavaScript",
+            "created_at": 1608820728868
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://images.unsplash.com/photo-1591980896142-4e36328411ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+            "full_name": "Maya Devi",
+            "birthdate": 486259200000,
+            "education_level": "bachelors_degree",
+            "format": "online",
+            "subjects": "HTML, CSS",
+            "created_at": 1608820912660
+        }
+    ]
 }
