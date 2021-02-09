@@ -3,7 +3,7 @@
 </h1>
 
 <h2 align="center">LaunchBase Bootcamp Challenges</h2>
-<h3 align="center">Module 4 - Gym Manager</h3>
+<h3 align="center">Module 5 - Data Persistence</h3>
 
 <p align="center">
     <a href="#rocket-challenges">Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
