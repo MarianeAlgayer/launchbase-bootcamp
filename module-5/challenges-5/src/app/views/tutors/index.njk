@@ -1,0 +1,42 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Tutoring | Tutors</title>
+
+    <link rel="stylesheet" href="/styles/tutors.css">
+{% endblock head %}
+
+{% block content %}
+
+    <main class="content table-container">
+        <a href="/tutors/create">New</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tutor</th>
+                    <th>Specialty Subject Areas</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for tutor in tutors %}
+                    <tr>
+                        <td>
+                            <span style="filter: grayscale(100%); background-image: url({{ tutor.avatar_url }})"></span>
+                            {{ tutor.full_name }}
+                        </td>
+
+                        <td>
+                        {% for subject in tutor.subjects.split(',') %}
+                            <span class="subject">{{ subject }}</span>
+                        {% endfor %}
+                        </td>
+                        
+                        <td><a href="/tutors/{{ tutor.id }}">View</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+{% endblock content %}

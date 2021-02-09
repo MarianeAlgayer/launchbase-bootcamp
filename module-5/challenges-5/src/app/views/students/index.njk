@@ -1,0 +1,45 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Tutoring | Students</title>
+
+    <link rel="stylesheet" href="/styles/students.css">
+{% endblock head %}
+
+{% block content %}
+
+    <main class="content table-container">
+        <a href="/students/create">New</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Email</th>
+                    <th>School Year</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                    <tr>
+                        <td>
+                            <span style="filter: grayscale(100%); background-image: url({{ student.avatar_url }})"></span>
+                            {{ student.full_name }}
+                        </td>
+
+                        <td>
+                            <span>{{ student.email }}</span>
+                        </td>
+                        
+                        <td>
+                            <span>{{ student.school_year }} grade</span>
+                        </td>
+
+                        <td><a href="/students/{{ student.id }}">View</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+{% endblock content %}

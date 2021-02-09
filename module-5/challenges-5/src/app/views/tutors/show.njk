@@ -1,0 +1,51 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Tutoring | Tutors</title>
+
+    <link rel="stylesheet" href="/styles/tutors.css">
+{% endblock head %}
+
+{% block content %}
+
+    <main class="content">
+        <section 
+            class="avatar" 
+            style="filter: grayscale(100%); background: url({{ tutor.avatar_url }}) no-repeat top center / cover">
+        </section>
+        <section class="details">
+            <div class="item">
+                <div>Tutor</div>
+                <div>{{ tutor.full_name }}</div>
+            </div>
+            <div class="item">
+                <div>Age</div>
+                <div>{{ tutor.age }}</div>
+            </div>
+            <div class="item">
+                <div>Education Level</div>
+                <div>{{ tutor.education_level }}</div>
+            </div>
+            <div class="item">
+                <div>Education Format</div>
+                <div>{{ tutor.format }}</div>
+            </div>
+            <div class="item">
+                <div>Specialty Subject Areas</div>
+                <div>
+                    {% for subject in tutor.subjects %}
+                        <span>{{ subject }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="item">
+                <div>Since</div>
+                <div>{{ tutor.created_at }}</div>
+            </div>
+
+            <a href="/tutors/{{tutor.id}}/edit" class="button">Edit</a>
+
+        </section>
+    </main>
+
+{% endblock content %}

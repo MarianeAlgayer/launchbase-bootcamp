@@ -1,0 +1,25 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Tutoring | Tutors</title>
+
+    <link rel="stylesheet" href="/styles/tutors.css">
+{% endblock head %}
+
+{% block content %}
+
+    <form class="content" action="/tutors" method="POST">
+        <section 
+            class="avatar" 
+            style="background: url(https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_1280.png) no-repeat bottom center / cover">
+        </section>
+        <section class="details">
+            
+            <h3>New tutor</h3>
+
+            {% include 'tutors/fields.njk' %}
+
+        </section>
+    </form>
+
+{% endblock content %}

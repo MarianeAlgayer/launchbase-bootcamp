@@ -1,0 +1,105 @@
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder="http://" 
+            value="{{ student.avatar_url }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>Full Name</div>
+    <div>
+        <input 
+            type="text" 
+            name="full_name" 
+            placeholder="Type your full name"
+            value="{{ student.full_name }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>Email</div>
+    <div>
+        <input 
+            type="email" 
+            name="email" 
+            placeholder="Type your email"
+            value="{{ student.email }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>Birthdate</div>
+    <div>
+        <input 
+            type="date" 
+            name="birthdate"
+            value="{{ student.birthdate }}"
+        >
+    </div>
+</div>
+<div class="item">
+    <div>School Year</div>
+    <div>
+        <select name="school_year">
+            <option 
+                value="6th" 
+                {% if student.school_year == '6th' %} selected {% endif %}
+            >
+                Middle School - 6th grade
+            </option>
+            <option 
+                value="7th" 
+                {% if student.school_year == '7th' %} selected {% endif %}
+            >
+                Middle School - 7th grade
+            </option>
+            <option 
+                value="8th" 
+                {% if student.school_year == '8th' %} selected {% endif %}
+            >
+                Middle School - 8th grade
+            </option>
+            <option 
+                value="9th" 
+                {% if student.school_year == '9th' %} selected {% endif %}
+            >
+                High School - 9th grade
+            </option>
+            <option 
+                value="10th" 
+                {% if student.school_year == '10th' %} selected {% endif %}
+            >
+                High School - 10th grade
+            </option>
+            <option 
+                value="11th" 
+                {% if student.school_year == '11th' %} selected {% endif %}
+            >
+                High School - 11th grade
+            </option>
+            <option 
+                value="12th" 
+                {% if student.school_year == '12th' %} selected {% endif %}
+            >
+                High School - 12th grade
+            </option>
+        </select>
+    </div>
+</div>
+<div class="item">
+    <div>Weekly Workload (hours)</div>
+    <div>
+        <input 
+            type="number" 
+            name="workload"
+            placeholder="Choose your weekly workload in hours"
+            value="{{ student.workload }}"
+        >
+    </div>
+</div>
+
+<button type="submit">Save</button>
