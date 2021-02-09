@@ -20,7 +20,7 @@
 
 ## :computer: Result
 
-- [View code](https://github.com/MarianeAlgayer/launchbase-bootcamp/tree/master/module-4/challenges-5)
+- [View code](https://github.com/MarianeAlgayer/launchbase-bootcamp/tree/master/module-5/challenges-5)
 
 ## :memo: License
 
