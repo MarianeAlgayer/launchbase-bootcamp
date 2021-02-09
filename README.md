@@ -20,6 +20,7 @@ The LaunchBase Bootcamp is a remote training focused on the fundamentals of web 
 - [Module 2 - Getting Started with Front-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-2)
 - [Module 3 - Getting Started with Back-end Development](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-3)
 - [Module 4 - Gym Manager](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-4)
+- [Module 5 - Data Persistence](https://github.com/MarianeAlgayer/bootcamp-launchbase/tree/master/module-5)
 
 🚧 In progress 🚧
 
