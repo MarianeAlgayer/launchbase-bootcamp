@@ -1,13 +1,22 @@
 const { date } = require('../../lib/utils')
+const Student = require('../models/Student')
 
 module.exports = {
     index(req, res) {
 
-        return res.render('students/index')
+        Student.all(function(students) {
+            return res.render('students/index', { students })
+        })
     },
     show(req, res) {
 
-        return
+        Student.find(req.params.id, function(student) {
+            if(!student) return res.send('Student not found!')
+
+            student.birthdate = date(student.birthdate).birthday
+
+            return res.render('students/show', { student })
+        })
     },
     create(req, res) {
 
@@ -22,34 +31,40 @@ module.exports = {
                 return res.send('Please, fill in all required fields.')
             }
         }
-    
-        let {avatar_url, full_name, email, birthdate, school_year, workload } = req.body
-    
-        return
+
+        Student.create(req.body, function(student) {
+            return res.redirect(`/students/${student.id}`)
+        })
     },
     edit(req, res) {
 
-        return
+        Student.find(req.params.id, function(student) {
+            if(!student) return res.send('Student not found!')
+
+            student.birthdate = date(student.birthdate).iso
+
+            return res.render('students/edit', { student })
+        })
     },
     update(req, res) {
 
-        const { id } = req.body
-        /* id = Number(id) */
-        let index = 0
-    
-        const foundStudent = data.students.find(function(student, foundIndex) {
-            if (id == student.id) {
-                index = foundIndex
-                return true
+        const keys = Object.keys(req.body)
+
+        for (key of keys) {
+            if (req.body[key] == '') {
+                return res.send('Please, fill in all required fields.')
             }
+        }
+
+        Student.update(req.body, function() {
+            return res.redirect(`/students/${req.body.id}`)
         })
-    
-        if (!foundStudent) return res.send('Student not found!')
-    
-        return
     },
     delete(req, res) {
 
-        return
+        Student.delete(req.body.id, function() {
+            return res.redirect(`/students`)
+        })
     }
 }
+
