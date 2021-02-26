@@ -9,12 +9,25 @@
 {% block content %}
 
     <main class="content table-container">
-        <a href="/tutors/create">New</a>
+        <div class="header">
+            <a class="button" href="/tutors/create">New</a>
+            <form action="/tutors" method="GET">
+                <input 
+                    type="text" 
+                    name="filter"
+                    placeholder="Filter by name or subject"
+                    value="{{ filter }}"
+                >
+                <button type="submit">Filter</button>
+            </form>
+        </div>
+
         <table>
             <thead>
                 <tr>
                     <th>Tutor</th>
                     <th>Specialty Subject Areas</th>
+                    <th>Students</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -25,13 +38,12 @@
                             <span style="filter: grayscale(100%); background-image: url({{ tutor.avatar_url }})"></span>
                             {{ tutor.full_name }}
                         </td>
-
                         <td>
                         {% for subject in tutor.subjects.split(',') %}
                             <span class="subject">{{ subject }}</span>
                         {% endfor %}
                         </td>
-                        
+                        <td>{{ tutor.total_students }}</td>
                         <td><a href="/tutors/{{ tutor.id }}">View</a></td>
                     </tr>
                 {% endfor %}

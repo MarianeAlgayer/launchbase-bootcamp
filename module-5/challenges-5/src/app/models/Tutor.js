@@ -5,9 +5,11 @@ module.exports = {
     all(callback) {
 
         db.query(`
-            SELECT * 
+            SELECT tutors.*, count(students) AS total_students 
             FROM tutors
-            ORDER BY name ASC`, function(err, results) {
+            LEFT JOIN students ON (tutors.id = students.tutor_id)
+            GROUP BY tutors.id
+            ORDER BY total_students DESC`, function(err, results) {
                 if(err) throw `Database Error! ${err}`
 
                 callback(results.rows)
@@ -54,6 +56,21 @@ module.exports = {
 
                 callback(results.rows[0])
             })
+    },
+    findBy(filter, callback) {
+
+        db.query(`
+            SELECT tutors.*, count(students) AS total_students 
+            FROM tutors
+            LEFT JOIN students ON (tutors.id = students.tutor_id)
+            WHERE tutors.full_name ILIKE '%${filter}%'
+            OR tutors.subjects ILIKE '%${filter}%'
+            GROUP BY tutors.id
+            ORDER BY total_students DESC`, function(err, results) {
+                if(err) throw `Database Error! ${err}`
+
+                callback(results.rows)
+        })
     },
     update(data, callback) {
 

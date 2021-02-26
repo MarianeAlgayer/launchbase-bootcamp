@@ -4,9 +4,17 @@ const Tutor = require('../models/Tutor')
 module.exports = {
     index(req, res) {
 
-        Tutor.all(function(tutors) {
-            return res.render('tutors/index', { tutors })
-        })
+        const { filter } = req.query
+
+        if(filter) {
+            Tutor.findBy(filter, function(tutors) {
+                return res.render('tutors/index', { tutors, filter })
+            })
+        } else {
+            Tutor.all(function(tutors) {
+                return res.render('tutors/index', { tutors })
+            })
+        }
     },
     show(req, res) {
 
