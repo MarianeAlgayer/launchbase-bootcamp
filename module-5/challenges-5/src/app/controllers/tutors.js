@@ -4,17 +4,29 @@ const Tutor = require('../models/Tutor')
 module.exports = {
     index(req, res) {
 
-        const { filter } = req.query
+        let { filter, page, limit } = req.query
 
-        if(filter) {
-            Tutor.findBy(filter, function(tutors) {
-                return res.render('tutors/index', { tutors, filter })
-            })
-        } else {
-            Tutor.all(function(tutors) {
-                return res.render('tutors/index', { tutors })
-            })
+        page = page || 1
+        limit = limit || 2
+        let offset = limit * (page - 1)
+
+        const params = {
+            filter,
+            page,
+            limit,
+            offset,
+            callback(tutors) {
+                
+                const pagination = {
+                    total: Math.ceil(tutors[0].total / limit),
+                    page
+                }
+
+                return res.render('tutors/index', { tutors, pagination, filter })
+            }
         }
+
+        Tutor.paginate(params)
     },
     show(req, res) {
 

@@ -9,6 +9,7 @@
 {% block content %}
 
     <main class="content table-container">
+
         <div class="header">
             <a class="button" href="/tutors/create">New</a>
             <form action="/tutors" method="GET">
@@ -49,6 +50,12 @@
                 {% endfor %}
             </tbody>
         </table>
+
+        <div class="pagination"
+            data-page={{pagination.page}}
+            data-total={{pagination.total}}
+            data-filter={{filter}}
+        ></div>
     </main>
 
 {% endblock content %}
