@@ -22,6 +22,10 @@
 
 - [View code](https://github.com/MarianeAlgayer/launchbase-bootcamp/tree/master/module-5/challenges-5)
 
+<p align="center">
+    <img src="challenges-5/public/assets/challenge-5-desktop.gif" width="600px">
+</p>
+
 ## :memo: License
 
 This project is under **MIT license**.
