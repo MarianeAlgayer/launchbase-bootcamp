@@ -61,10 +61,10 @@ module.exports = {
             UPDATE students SET
                 avatar_url=($1), 
                 full_name=($2), 
-                email=($3)
+                email=($3),
                 birthdate=($4), 
                 school_year=($5),
-                workload=($6)
+                workload=($6),
                 tutor_id=($7)
             WHERE id = $8
         `
